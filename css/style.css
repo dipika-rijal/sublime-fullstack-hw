@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* All headings centered with bottom line */
+h1, h2, h3 {
+  margin: 20px auto;
+  width: fit-content;
+  border-bottom: 2px solid #333;
+  padding-bottom: 4px;
+}
+
+/* Sections */
+.section {
+  width: 70%;
+  margin: 20px auto 40px auto;
+}
+
+/* Projects layout */
+.Projects-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Large project box */
+.box {
+  width: 450px;
+  padding: 15px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.box p {
+  text-align: justify;
+}
+
+/* Contact form */
+label {
+  display: inline-block;
+  width: 80px;
+}
+
+input, textarea {
+  width: 50%;
+  padding: 6px;
+  margin: 6px;
+  box-sizing: border-box;
+}
+
+
