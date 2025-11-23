@@ -61,4 +61,15 @@ input, textarea {
   box-sizing: border-box;
 }
 
+..submit-btn {
+    background: black;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
 
