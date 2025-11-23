@@ -61,7 +61,7 @@ input, textarea {
   box-sizing: border-box;
 }
 
-..submit-btn {
+.submit-btn {
     background: black;
     color: white;
     padding: 8px 20px;
@@ -70,6 +70,9 @@ input, textarea {
     cursor: pointer;
 }
 
+.submit-btn:hover {
+    background: #333;
+}
 
 
 
