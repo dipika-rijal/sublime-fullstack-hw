@@ -1,64 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
 }
 
-/* All headings centered with bottom line */
 h1, h2, h3 {
-  margin: 20px auto;
-  width: fit-content;
-  border-bottom: 2px solid #333;
-  padding-bottom: 4px;
+    margin: 20px auto;
+    width: fit-content;
+    border-bottom: 2px solid #333;
+    padding-bottom: 4px;
 }
 
-/* Sections */
 .section {
-  width: 70%;
-  margin: 20px auto 40px auto;
+    width: 70%;
+    margin: 20px auto 40px auto;
 }
 
-/* Projects layout */
 .Projects-box {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
-/* Large project box */
 .box {
-  width: 450px;
-  padding: 15px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  transition: .3s;
+    width: 450px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    transition: .3s;
 }
 
 .box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
 }
 
 .box img {
-  width: 100%;
-  border-radius: 8px;
+    width: 100%;
+    border-radius: 8px;
 }
 
 .box p {
-  text-align: justify;
+    text-align: justify;
 }
 
-/* Contact form */
 label {
-  display: inline-block;
-  width: 80px;
+    display: inline-block;
+    width: 80px;
 }
 
 input, textarea {
-  width: 50%;
-  padding: 6px;
-  margin: 6px;
-  box-sizing: border-box;
+    width: 50%;
+    padding: 6px;
+    margin: 6px;
+    box-sizing: border-box;
 }
 
 .submit-btn {
@@ -68,11 +72,29 @@ input, textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .submit-btn:hover {
     background: #333;
 }
 
-
-
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .Projects-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        width: 90%;
+    }
+    
+    .section {
+        width: 90%;
+    }
+    
+    input, textarea {
+        width: 80%;
+    }
+}
